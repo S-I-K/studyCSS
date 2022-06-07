@@ -1,0 +1,63 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+body {
+  background: #b71c1c;
+  color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+h1::before {
+  content: "1. ";
+}
+
+h1::after {
+  content: " - 기본";
+}
+
+/* 화면 너비가 0 ~ 1280px : DeskTop */
+@media (max-width: 1280px) {
+  body {
+    background: #880e4f;
+  }
+}
+
+/* 화면 너비가 0 ~ 1024px : DeskTop */
+@media (max-width: 1024px) {
+  body {
+    background: #4a148c;
+  }
+}
+
+/* 화면 너비가 0 ~ 960px : NoteBook */
+@media (max-width: 960px) {
+  body {
+    background: #311b92;
+  }
+}
+
+/* 화면 너비가 0 ~ 768px : Tablet */
+@media (max-width: 768px) {
+  body {
+    background: #4a148c;
+  }
+}
+
+/* 화면 너비가 0 ~ 576px : Mobile */
+@media (max-width: 576px) {
+  body {
+    background: #004d40;
+  }
+}
+/*# sourceMappingURL=style.css.map */
