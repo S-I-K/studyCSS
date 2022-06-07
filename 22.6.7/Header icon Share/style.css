@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* 여백 초기화 */
+body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* a 링크 초기화 */
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2698cb;
+}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+  font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+  color: #222;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* 폰트 스타일 초기화 */
+em, address {
+  font-style: normal;
+}
+
+/* 블릿기호 초기화 */
+ul, li, ol {
+  list-style: none;
+}
+
+/* 제목 태그 초기화 */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* layout */
+#header {
+  background: url(../img/header_bg.jpg) repeat-x center top;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  height: 327px;
+}
+
+.header .header_menu {
+  text-align: right;
+}
+
+.header .header_menu a {
+  color: #fff;
+  display: inline-block;
+  padding: 8px 0 6px 10px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  font-family: 'Abel', sans-serif;
+}
+
+.header .header_menu a:hover {
+  color: #ccc;
+}
+
+.header .header_tit {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 55px;
+  font-family: 'Abel', sans-serif;
+}
+
+.header .header_tit h1 {
+  font-size: 30px;
+  color: #fff;
+  background: #51b0dc;
+  display: inline-block;
+  padding: 5px 30px 5px 30px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  -webkit-transition: -webkit-box-shadow .25s ease-in-out;
+  transition: -webkit-box-shadow .25s ease-in-out;
+  transition: box-shadow .25s ease-in-out;
+  transition: box-shadow .25s ease-in-out, -webkit-box-shadow .25s ease-in-out;
+}
+
+.header .header_tit h1:hover {
+  -webkit-box-shadow: inset -9em 0 0 0 #257fac,inset 9em 0 0 0 #257fac;
+          box-shadow: inset -9em 0 0 0 #257fac,inset 9em 0 0 0 #257fac;
+}
+
+.header .header_tit a {
+  font-size: 16px;
+  color: #fff;
+  background: #4a9abf;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: -7px;
+  -webkit-transition: -webkit-box-shadow .25s ease-in-out;
+  transition: -webkit-box-shadow .25s ease-in-out;
+  transition: box-shadow .25s ease-in-out;
+  transition: box-shadow .25s ease-in-out, -webkit-box-shadow .25s ease-in-out;
+}
+
+.header .header_tit a:hover {
+  -webkit-box-shadow: inset 0 0 0 5px rgba(75, 154, 191, 0.9), inset 0 0 0 100px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 0 5px rgba(75, 154, 191, 0.9), inset 0 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.header .header_icon {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 45px;
+}
+
+.header .header_icon li {
+  display: inline;
+  margin: 0 2px;
+}
+
+.header .header_icon li a {
+  background: #3192bf;
+  border-radius: 50%;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 35px;
+  line-height: 60px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header .header_icon li a:hover {
+  -webkit-box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+}
+
+.header .header_icon li a:hover span {
+  opacity: 1;
+  top: -33px;
+}
+
+.header .header_icon li a span {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 12px;
+  line-height: 1.6;
+  background: #3192bf;
+  padding: 3px 9px;
+  border-radius: 6px 0;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header .header_icon li a span::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  margin-left: -5px;
+  border-top: 5px solid #3192bf;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+/* MediaQuery */
+@media (max-width: 1220px) {
+  .container {
+    width: 100%;
+  }
+  .row {
+    padding: 0 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
