@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* 여백 초기화 */
+body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* a 링크 초기화 */
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2698cb;
+}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+  font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+  color: #222;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* layout */
+#header {
+  background: url(../img/header_bg.jpg) repeat-x center top;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* header */
+.header {
+  height: 327px;
+}
+
+.header .header_menu {
+  text-align: right;
+}
+
+.header .header_menu a {
+  color: #fff;
+  display: inline-block;
+  padding: 8px 0 6px 10px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  font-family: 'Abel', sans-serif;
+}
+
+.header .header_menu a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 1220px) {
+  .container {
+    width: 100%;
+  }
+  .row {
+    padding: 0 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
